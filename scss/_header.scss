@@ -1,0 +1,109 @@
+.container__header {
+   margin-bottom: 24px;
+}
+.header__box-icon {
+   min-height: 56px;
+   background-color: $header-background-color;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0px 16px;
+}
+.box-icon__left {
+   display: flex;
+   column-gap: 21px;
+   align-items: center; 
+}
+.box-icon__right {
+   display: flex;
+   column-gap: 12px;
+   align-items: center;
+}
+.box-icon__form-search {
+   position: relative;
+   background: rgba(255, 255, 255, 0.08);
+   border-radius: 4px; 
+}
+.box-icon__icon-search {
+   position: absolute;
+   z-index: 1;
+   top: 32%;
+   left: 8px;
+   color: #FFFFFF;
+}
+.box-icon__field-search {
+   font-family: "Open Sans";
+   font-size: 14px;
+   line-height: 22px;
+   padding: 5px 24px;
+   width: 266px;
+   background: none;
+      &::placeholder {
+         color: #FFFFFF;
+      }
+      &:focus {
+         background: #FFFFFF;
+         box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.16), 0px 0px 0px 5px rgba(255, 255, 255, 0.16);
+         border-radius: 4px;
+      } 
+}
+.box-icon__field-search:focus + .box-icon__icon-search {
+   color: black;
+}
+.box-icon__menu:hover .menu__dropdown {
+   display: block;
+}
+.menu__dropdown {
+   display: none;
+   position: absolute;
+   right: 1%; 
+   background: #FFFFFF;
+   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.16), 0px 2px 8px rgba(0, 0, 0, 0.16);
+   border-radius: 2px;
+   padding: 8px 0px;
+}
+.dropdown__item-title {
+   font-size: 12px;
+   line-height: 20px;
+   color: rgba(0, 0, 0, 0.32);
+   margin: 4px 24px;
+}
+.dropdown__link {
+   display: block;
+   padding: 5px 71px 5px 24px;
+      &:hover {
+         background: rgba(0, 0, 0, 0.04);
+      }
+}
+.dropdown__item--border:before {
+   content: "";
+   display: block;
+   width: 208px;
+   height: 1px;
+   background: rgba(0,0,0,0.16);
+   margin: 8px 24px 7px;
+}
+
+
+
+
+
+
+
+
+
+
+.header__box-menu {
+   min-height: 48px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 8px; 
+}
+.box-menu__item {
+   color: #ABABAB;
+   &:focus {
+      color: $main-text-color;
+   }
+}

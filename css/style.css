@@ -1,0 +1,266 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+button {
+  font-family: inherit;
+}
+
+button, a {
+  color: inherit;
+  cursor: url(../img/cursors.svg), pointer;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 22px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+input[type="search"]:focus {
+  outline: none;
+}
+
+h1 {
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.button {
+  display: inline-block;
+  min-width: 108px;
+  padding: 5px 27px;
+  background: #4488FF;
+  border-radius: 2px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 44px;
+  margin-bottom: 4px;
+}
+.button:hover {
+  background: #69A0FF;
+}
+.button:active {
+  background: #3E7BE6;
+}
+.button:focus {
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.9), 0px 0px 0px 5px rgba(68, 136, 255, 0.64);
+}
+
+.container__header {
+  margin-bottom: 24px;
+}
+
+.header__box-icon {
+  min-height: 56px;
+  background-color: #04454D;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+.box-icon__left {
+  display: flex;
+  column-gap: 21px;
+  align-items: center;
+}
+
+.box-icon__right {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.box-icon__form-search {
+  position: relative;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+
+.box-icon__icon-search {
+  position: absolute;
+  z-index: 1;
+  top: 32%;
+  left: 8px;
+  color: #FFFFFF;
+}
+
+.box-icon__field-search {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 22px;
+  padding: 5px 24px;
+  width: 266px;
+  background: none;
+}
+.box-icon__field-search::placeholder {
+  color: #FFFFFF;
+}
+.box-icon__field-search:focus {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.16), 0px 0px 0px 5px rgba(255, 255, 255, 0.16);
+  border-radius: 4px;
+}
+
+.box-icon__field-search:focus + .box-icon__icon-search {
+  color: black;
+}
+
+.box-icon__menu:hover .menu__dropdown {
+  display: block;
+}
+
+.menu__dropdown {
+  display: none;
+  position: absolute;
+  right: 1%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.16), 0px 2px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 2px;
+  padding: 8px 0px;
+}
+
+.dropdown__item-title {
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.32);
+  margin: 4px 24px;
+}
+
+.dropdown__link {
+  display: block;
+  padding: 5px 71px 5px 24px;
+}
+.dropdown__link:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.dropdown__item--border:before {
+  content: "";
+  display: block;
+  width: 208px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.16);
+  margin: 8px 24px 7px;
+}
+
+.header__box-menu {
+  min-height: 48px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.box-menu__item {
+  color: #ABABAB;
+}
+.box-menu__item:focus {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.main__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__title {
+  margin-bottom: 16px;
+}
+
+.section__subtitle {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.form__blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  column-gap: 24px;
+  margin-bottom: 24px;
+}
+
+.form__blocks-radio {
+  border: 1px solid rgba(68, 136, 255, 0.16);
+  padding: 20px;
+}
+.form__blocks-radio:hover {
+  border-color: #4488FF;
+}
+
+.radio__button {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio__icon {
+  position: absolute;
+  background-image: url(../img/radio.svg);
+  height: 24px;
+  width: 24px;
+}
+
+.radio__button:checked + .radio__icon {
+  background-image: url(../img/circle.svg);
+}
+
+.blocks-radio__content {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.blocks-radio__content-image {
+  margin-bottom: 16px;
+}
+
+.blocks-radio__content-subtitle {
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 4px;
+  margin-bottom: 40px;
+}
+
+.blocks-radio__content-text--color {
+  color: rgba(0, 0, 0, 0.56);
+}
+
+.blocks-radio__content-text {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.form__blocks-wrapper {
+  display: flex;
+  justify-content: center;
+}

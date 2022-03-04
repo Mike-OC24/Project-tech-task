@@ -1,0 +1,66 @@
+.main__section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;  
+}
+.section__title {
+   margin-bottom: 16px;
+}
+.section__subtitle {
+   text-align: center;
+   margin-bottom: 32px;
+}
+.form__blocks {
+   display: grid;
+   grid-template-columns: repeat(3,240px);
+   column-gap: 24px;
+   margin-bottom: 24px;
+}
+.form__blocks-radio {
+   border: 1px solid rgba(68, 136, 255, 0.16);
+   padding: 20px;
+      &:hover {
+         border-color: #4488FF;
+      }
+}
+.radio__button {
+   position: absolute;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+.radio__icon {
+   position: absolute;
+   background-image: url(../img/radio.svg);
+   height: 24px;
+   width: 24px;
+}
+.radio__button:checked + .radio__icon {
+   background-image: url(../img/circle.svg);
+   
+}
+.blocks-radio__content {
+   text-align: center;
+   margin-top: 36px;
+}
+.blocks-radio__content-image {
+   margin-bottom: 16px;
+}
+.blocks-radio__content-subtitle {
+   font-size: 12px;
+   line-height: 20px;
+   margin-top: 4px; 
+   margin-bottom: 40px;
+}
+.blocks-radio__content-text--color {
+   color: rgba(0, 0, 0, 0.56);
+}
+
+.blocks-radio__content-text {
+   font-size: 12px;
+   line-height: 20px;
+}
+.form__blocks-wrapper {
+   display: flex;
+   justify-content: center;
+}

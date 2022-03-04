@@ -1,0 +1,12 @@
+$header-background-color: #04454D;
+$main-text-color: rgba(0, 0, 0, 0.9);
+%status-button-selected {
+   display: inline-block;
+   min-width: 108px;
+   padding: 5px 27px;
+   background: none;
+   color: rgba(68, 136, 255, 0.9);
+}
+$color-button-normal: #4488FF;
+$color-button-hover: #69A0FF;
+$color-button-active: #3E7BE6;
